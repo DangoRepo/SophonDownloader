@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Version>1.1.0</Version>
+	<AssemblyVersion>1.1.0</AssemblyVersion>
+	  <AssemblyName>Sophon.Downloader</AssemblyName>
+	  <AssemblyTitle>Download mihoyo assets from sophon packages.</AssemblyTitle>
+	  <Copyright>Copyright (c) 2025 Escartem</Copyright>
+	  <Authors>Escartem</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Options" Version="6.12.0.148" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sophon\Sophon.csproj" />
+  </ItemGroup>
+
+</Project>

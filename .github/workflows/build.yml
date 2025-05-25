@@ -1,0 +1,36 @@
+name: PUBLISH
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths-ignore:
+      - '**/README.md'
+      - '**/build.yml'
+      - '**/.gitignore'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore
+        run: dotnet restore Sophon.Downloader.sln
+        working-directory: Sophon.Downloader
+
+      - name: Build
+        run: dotnet build Sophon.Downloader.sln -c Release
+        working-directory: Sophon.Downloader
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sophon.Downloader
+          path: Sophon.Downloader/Core/bin/Release/*
