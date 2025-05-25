@@ -16,7 +16,7 @@ After Genshin forced SophonChunks to update and stopped giving zip files for upd
 
 ### Use Pre-built
 
-- [Click here for latest build](https://github.com/DangoRepo/SophonDownloader/releases) ✨
+- [Click here for latest build](https://github.com/DangoRepo/SophonDownloader/actions/runs/15238865972/artifacts/3193171693) ✨
 
 ### Build From Source
 
