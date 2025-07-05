@@ -18,7 +18,7 @@
 
 ### 使用已构建好的版本
 
-- [最新的自动构建版本可在此处获取](https://github.com/DangoRepo/SophonDownloader/actions/runs/15238865972/artifacts/3193171693) ✨
+- [最新的自动构建版本可在此处获取](https://github.com/DangoRepo/SophonDownloader/actions/runs/15238891076/artifacts/3193178790) ✨
 
 ### 从源代码构建
 
